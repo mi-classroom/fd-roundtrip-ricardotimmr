@@ -5,13 +5,13 @@
 html,
 body {
   background-color: var(--color-white);
-  font-family: "source-sans-3", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: var(--m);
   font-weight: var(--fw-regular);
 }
 
 body{
-  margin: 0 var(--l);
+  margin: 0 var(--xxl);
 }
 
 header {

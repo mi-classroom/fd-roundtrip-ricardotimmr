@@ -60,7 +60,7 @@
 
         <section class="lower-part">
 
-            <div id="first-row">
+            <div class="first-row">
                 <p>93 Beiträge</p>
                 <div class="filter-wrapper">
                     <button>Neueste <span>&#9662;</span></button>
@@ -74,7 +74,8 @@
             </div>
 
 
-            <table class="agenda-list">
+            <table class="agenda-table">
+
                 <thead class="is-hidden">
                     <tr>
                         <th>Datum</th>
@@ -84,172 +85,123 @@
                         <th>Download</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">06.02.24</td>
+                        <td class="table-title">Wie plane ich Projekte nachhaltig?</td>
+                        <td class="table-phase">
                             <ul>
                                 <li>Projektidee</li>
                                 <li>Projektstart</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">14 Folien</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">19.12.23</td>
+                        <td class="table-title">Wie erstelle ich eine Agenda?</td>
+                        <td class="table-phase">
                             <ul>
-                                <li>Projektidee</li>
-                                <li>Projektstart</li>
+                                <li>immer</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">1 Seite</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">19.12.23</td>
+                        <td class="table-title">Wie priorisiere ich (ein Backlog)?</td>
+                        <td class="table-phase">
                             <ul>
-                                <li>Projektidee</li>
                                 <li>Projektstart</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">1 Seite</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">19.12.23</td>
+                        <td class="table-title">Wie halte ich einen Pitch?</td>
+                        <td class="table-phase">
                             <ul>
-                                <li>Projektidee</li>
                                 <li>Projektstart</li>
+                                <li>Projektabschluss</li>
+                                <li>Projektidee</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">23 Folien</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">01.12.23</td>
+                        <td class="table-title">Wie plane ich meine Zeit richtig?</td>
+                        <td class="table-phase">
                             <ul>
                                 <li>Projektidee</li>
-                                <li>Projektstart</li>
+                                <li>Projektdurchführung</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">4 Folien</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">31.12.12</td>
+                        <td class="table-title">Wie feier ich riesen Parties?</td>
+                        <td class="table-phase">
                             <ul>
-                                <li>Projektidee</li>
                                 <li>Projektstart</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">100 Folien</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">19.12.23</td>
+                        <td class="table-title">Wie erstelle ich eine Agenda</td>
+                        <td class="table-phase">
                             <ul>
                                 <li>Projektidee</li>
                                 <li>Projektstart</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">14 Folien</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>19.12.23</td>
-                        <td>Wie erstelle ich eine Agenda</td>
-                        <td>
+                    <tr class="table-item">
+                        <td class="tabel-date">19.12.23</td>
+                        <td class="table-title">Wie erstelle ich eine Agenda</td>
+                        <td class="table-phase">
                             <ul>
                                 <li>Projektidee</li>
                                 <li>Projektstart</li>
                             </ul>
                         </td>
-                        <td>14 Folien</td>
-                        <td>
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" fill="white" />
-                                <path
-                                    d="M28 13C28 13.265 27.895 13.52 27.707 13.707C27.52 13.895 27.265 14 27 14C26.735 14 26.48 13.895 26.293 13.707C26.105 13.52 26 13.265 26 13V7.41499L17.709 15.708C17.521 15.895 17.267 16.001 17.001 16.001C16.736 16.001 16.481 15.895 16.294 15.708C16.106 15.52 16.001 15.265 16.001 15C16.001 14.735 16.106 14.48 16.294 14.292L24.585 6H19C18.735 6 18.48 5.895 18.293 5.707C18.105 5.52 18 5.265 18 5C18 4.735 18.105 4.48 18.293 4.293C18.48 4.105 18.735 4 19 4H27C27.265 4 27.52 4.105 27.707 4.293C27.895 4.48 28 4.735 28 5V13ZM23 16C22.735 16 22.48 16.105 22.293 16.293C22.105 16.48 22 16.735 22 17V26H6V10H15C15.265 10 15.52 9.895 15.707 9.707C15.895 9.52 16 9.265 16 9C16 8.735 15.895 8.48 15.707 8.293C15.52 8.105 15.265 8 15 8H6C5.47 8 4.961 8.211 4.586 8.586C4.211 8.961 4 9.47 4 10V26C4 26.53 4.211 27.039 4.586 27.414C4.961 27.789 5.47 28 6 28H22C22.53 28 23.039 27.789 23.414 27.414C23.789 27.039 24 26.53 24 26V17C24 16.735 23.895 16.48 23.707 16.293C23.52 16.105 23.265 16 23 16Z"
-                                    fill="black" />
-                            </svg>
+                        <td class="table-lenght">14 Folien</td>
+                        <td class="table-icon">
+                            <img src="assets/icons/redirect.png" alt="redirect-icon">    
                         </td>
                     </tr>
 
@@ -257,35 +209,33 @@
             </table>
         </section>
 
-        <section class="sticky-menu">
-
+        <div class="sticky-menu">
             <ul>
                 <li>
-                    <span></span>
+                    <img src="assets/icons/binoculars.png" alt="search-icon">
                     <p>Survival4All</p>
                 </li>
                 <li>
-                    <span></span>
+                    <img src="assets/icons/info.png" alt="search-icon">
                     <p>About Us</p>
                 </li>
                 <li>
-                    <span></span>
+                    <img src="assets/icons/folder-new.png" alt="search-icon">
                 </li>
                 <li>
-                    <span></span>
+                    <img src="assets/icons/comment.png" alt="search-icon">
                     <p>Verbesserungen</p>
                 </li>
                 <li>
-                    <span></span>
+                    <img src="assets/icons/profile.png" alt="search-icon">
                     <p>Profil</p>
                 </li>
             </ul>
-
-        </section>
+        </div>
 
     </main>
 
-    <footer>
+    <footer class="is-hidden">
         <ul class="footer-list">
             <li>
                 <h2>Barrierefreiheit</h2>

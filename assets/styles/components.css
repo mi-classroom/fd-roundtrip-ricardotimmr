@@ -10,9 +10,10 @@ header {
   margin-bottom: var(--m);
 
   h1 {
+    padding-top: var(--xxs);
     color: var(--color-white);
     font-size: var(--xxl);
-    font-weight: var(--fw-extraLight);
+    line-height: var(--lh-tight);
   }
 
   p {
@@ -29,7 +30,7 @@ header {
   }
 
   img {
-    color: var(--color-white);
+    filter: brightness(0) invert(1);
     border-radius: 30%;
     height: 50px;
     margin: var(--m);
@@ -60,50 +61,46 @@ header {
       width: 60%;
     }
 
-    h2 {
-      color: var(--color-white);
-      font-size: var(--l);
-      font-weight: var(--fw-bold);
-      padding-right: var(--m);
-    }
-
-    p {
-      color: var(--color-white);
-      line-height: var(--lh-normal);
-      font-weight: var(--fw-light);
-      margin-top: var(--xs);
-    }
-
     .card-content {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-      padding: var(--xs);
-
-      a{
-        text-decoration: none;
+      background-color: var(--color-green);
+        padding: var(--xl);
         display: flex;
-        justify-content: center;
-        color: var(--color-white);
-        font-weight: var(--fw-bold);
-        cursor: pointer;
-      }
+        flex-direction: column;
+        > * {
+          color: var(--color-white);
+        }
+        h2 {
+          font-size: var(--xl);
+        }
+        p {
+          margin-top: var(--xs);
+          font-weight: 300;
+        }
+        a {
+          margin-top: auto;
+          cursor: pointer;
+        }
     }
   }
 }
 
 
-/*  Agenda Table
+/*  Row above Table
 ---------------------------------------------------------------------------- */
 
-#first-row {
+.first-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--m);
 
+  p{
+    padding-left: var(--m);
+  }
+
   .filter-wrapper {
     display: flex;
     align-items: center;
+    padding-right: var(--m);
   }
   
   .filter-wrapper button {
@@ -111,3 +108,132 @@ header {
   }
 }
 
+/*  Agenda Table
+---------------------------------------------------------------------------- */
+
+.agenda-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+  background-color: transparent;
+
+  tr {
+    border-bottom: 2px solid var(--color-black);
+
+    td {
+      padding: 1rem;
+
+      &.table-date {
+        padding: 1rem 0;
+        white-space: nowrap;
+        width: 0;
+      }
+
+      &.table.title{
+        padding: 1rem 0 1rem 1rem;
+      }
+
+      &.table-phase {
+        ul {
+          white-space: nowrap;
+          width: 100%;
+          text-align: right;
+          margin: 0;
+          padding: 0;
+          
+          li {
+            display: inline-block;
+            background-color: var(--color-red);
+            padding: var(--xxs);
+            margin-left: var(--xs);
+            border-radius: var(--xxs);
+            color: var(--color-white);
+            font-size: var(--s);
+          }
+        }
+      }
+
+      &.table-lenght{
+        white-space: nowrap;
+        width: 0;
+        font-size: var(--s);
+        font-weight: var(--fw-light);
+      }
+
+      &.table-icon {
+        white-space: nowrap;
+        width: 0;
+        padding: 0;
+        padding-right: var(--m);
+        img {
+          width: 30px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 885px) {
+  .agenda-table {
+    tr {
+      td {
+        &.table-phase {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .agenda-table {
+    tr {
+      td {
+        &.table-lenght {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+/*  Sticky Menu
+---------------------------------------------------------------------------- */
+
+.sticky-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: var(--l);
+  margin-right: var(--l);
+  background-color: var(--color-purple);
+  padding: var(--m);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+
+    img{
+      width: 40px;
+    }
+
+    li{
+      filter: brightness(0) invert(1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p{
+        font-size: var(--m);
+      }
+    }
+  }
+}
