@@ -1,0 +1,8 @@
+/*  Header
+---------------------------------------------------------------------------- */
+
+header{
+  background-color: var(--color-purple);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
