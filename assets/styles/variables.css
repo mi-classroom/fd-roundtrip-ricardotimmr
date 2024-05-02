@@ -1,6 +1,7 @@
 :root{
   --ff-icons: material-icons;
-  
+
+  --fw-extraLight: 200;
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
@@ -27,6 +28,7 @@
   --color-orange: #F9622B;
   --color-purple: #641E50;
   --color-beige: #FEF9F2;
+  --color-green: #97A626;
 
   --color-black: #000000;
   --color-white: #FFFFFF;

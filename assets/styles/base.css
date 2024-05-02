@@ -15,7 +15,7 @@ body{
 }
 
 header {
-  padding: var(--l);
+  padding: 0 var(--l);
   background-color: var(--color-white);
 }
 
@@ -41,16 +41,11 @@ main {
 }
 
 main>* {
-  padding: var(--m);
+  padding: var(--m) 0;
 }
 
 
 h1 {
-  font-size: var(--xl);
-}
-
-h2 {
-  margin: var(--xl) var(--s) var(--xl) var(--s);
   font-size: var(--xl);
 }
 
